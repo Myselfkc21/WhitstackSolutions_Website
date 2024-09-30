@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-// import logo from '/logo.jpg'
+import logo from '/logo.jpg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 const NavBar = () => {
@@ -8,7 +8,7 @@ const NavBar = () => {
 
   return (
     <div className="NavContainer" id="home">
-      <img title="Whitstack Solutions" src="../../../../../public/logo.jpg" alt="Whitstack solutions Logo" loading="lazy" width="auto" height="auto" />
+      <img title="Whitstack Solutions" src={logo} alt="Whitstack solutions Logo" loading="lazy" width="auto" height="auto" />
 
       <div className={`menu ${menu ? "active" : null}`}>
         <a href="/">Home</a>
