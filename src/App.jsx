@@ -15,23 +15,23 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/service1",
+      path: "/service1/",
       element: <WebDevPage />,
     },
     {
-      path: "/contactus",
+      path: "/contactus/",
       element: <ContactUs />
     },
     {
-      path: "/service4",
+      path: "/service4/",
       element: <ITStafingPage></ITStafingPage>
     },
     {
-      path: "/service2",
+      path: "/service2/",
       element: <CloudConsultingPage />
     },
     {
-      path: "/service3",
+      path: "/service3/",
       element: <AIMLPage />
     }
   ]);
