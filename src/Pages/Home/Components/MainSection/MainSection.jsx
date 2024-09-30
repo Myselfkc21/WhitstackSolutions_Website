@@ -6,7 +6,7 @@ const MainSection = () => {
       <div className="image">
         <div className="square"></div>
         <div className="circle"></div>
-        <img id="personImage" src="/image3.png" alt="" />
+        <img title=" a person working/thinking" id="personImage" src="/image3.png" alt="an image of a person working/thinking" loading="lazy" width="auto" height="auto" />
       </div>
 
       <div className="text">

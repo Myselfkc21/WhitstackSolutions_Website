@@ -16,9 +16,9 @@ const PatnersAndClients = () => {
         <button>Learn More</button>
       </div>
       <div className="PartnerLogo">
-        <img width="300px" height="auto" loading="lazy" title="redington" src="/redington.png" alt="redington logo" />
-        <img width="200px" height="auto"  loading="lazy" title="pi" id="pi" src="/pi.png" alt="pi data center logo" />
-        <img width="300px" height="auto" loading="lazy" title="crayon" src="/crayon.png" alt="cryayon logo" />
+        <a href="https://redingtongroup.com/"><img width="300px" height="auto" loading="lazy" title="redington" src="/redington.png" alt="redington logo" /></a>
+        <a href="https://pidatacenters.com/"><img width="200px" height="auto" loading="lazy" title="pi" id="pi" src="/pi.png" alt="pi data center logo" /></a>
+        <a href="https://www.crayon.com/"><img width="300px" height="auto" loading="lazy" title="crayon" src="/crayon.png" alt="cryayon logo" /></a>
       </div>
     </div>
   );

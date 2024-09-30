@@ -52,6 +52,7 @@
   .ClientContainer {
     margin: 50px;
     /* padding: 10px; */
+    /* padding-left: 30px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

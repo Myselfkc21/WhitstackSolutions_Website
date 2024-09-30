@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 const FooterSection = () => {
   return (
-    <div className="FooterContainer">
+    <div className="FooterContaine">
       <div className="top">
         <div className="Socials">
           <h3>Whitstack Solutions</h3>
@@ -27,9 +27,9 @@ const FooterSection = () => {
         </div>
 
         <div className="footerMenu">
-          <a href="">Home</a>
-          <a href="">Our Services</a>
-          <a href="">Contact</a>
+          <a href="/">Home</a>
+          <a href="/#ourservices">Our Services</a>
+          <a href="/contactus">Contact</a>
         </div>
       </div>
 

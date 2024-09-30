@@ -15,7 +15,7 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  width: 690px;
+  width: 600px;
   gap: 30px;
   justify-content: center;
 }
@@ -50,14 +50,14 @@ p {
   position: absolute;
   width: 800px;
   height: auto;
-  left: 800px;
+  left: 750px;
   top: 110px;
 }
 
 #img2 {
   position: relative;
   top: 40px;
-  left: 150px;
+  left: 200px;
   width: 550px;
   height: 450px;
   transform: scale(1);

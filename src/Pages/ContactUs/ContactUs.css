@@ -1,5 +1,9 @@
 .headPart{
-    background-image: url("https://img.freepik.com/free-photo/businessman-showing-changes-report_1098-3504.jpg?w=1060&t=st=1727162330~exp=1727162930~hmac=af19024bf64853271927223643b4445da1842fbc81aa9a193b8e6ab4ef6c4ea2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1573164574230-db1d5e960238?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 @media (max-width: 768px){

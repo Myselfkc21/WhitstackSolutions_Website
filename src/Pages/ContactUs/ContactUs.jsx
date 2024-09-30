@@ -3,7 +3,7 @@ import NavBar from './components/NavBar/NavBar'
 import ContactForm from './components/ContactForm.jsx/ContactForm'
 import './ContactUs.css'
 import Head from './components/Head/Head'
-import FooterSection from '../Home/Components/Footers/FooterSection'
+import FooterSection from './Components/Footers/FooterSection'
 import { Helmet } from 'react-helmet'
 const ContactUs = () => {
   return (

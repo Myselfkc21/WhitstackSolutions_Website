@@ -26,20 +26,20 @@ const HeroSectioon = () => {
         <div className="welcomePart">
           <header>
             <h1>
-              Welcome to  Whitstack Solutions
+              Welcome to <br /> Whitstack Solutions
             </h1>
           </header>
           <p>
             Transform Your Business with Whitstack's Expert IT Strategy and Digital Solutions <br /> <br />
             Leverage Whitstack's top-tier expertise and advanced tech capabilities to develop a tailored IT strategy that drives your organization’s digital transformation. Our solutions align with your business goals, ensuring a seamless technological transition.
-<br /> <br />
+            <br /> <br />
             At Whitstack, we help individuals and companies tackle complex business challenges with speed, precision, and customized solutions. Every business is unique, and we prioritize understanding your company’s structure and objectives to deliver personalized results that set you up for success.
           </p>
         </div>
       </div>
       <div className="Images">
-        <img id="img1" src="/image2.png" alt="" />
-        <img id="img2" src={images[currentImage]} alt="Dynamic" />
+        <img title="globe" id="img1" src="/image2.png" alt="a background image of globe" loading="lazy" width="auto" height="auto" />
+        <img title="It Services" id="img2" src={images[currentImage]} alt="Dynamic images" loading="lazy" width="auto" height="auto" />
       </div>
     </div>
   );

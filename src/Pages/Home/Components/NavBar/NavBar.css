@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background-color: transparent;
 }
 
 img {
@@ -62,13 +63,13 @@ img {
   opacity: 0.5;
 }
 
-/* Hiding the hamburger icon on larger screens */
+
 .hamburger {
   display: none;
   cursor: pointer;
 }
 
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
   .NavContainer {
     margin: 0 20px;
@@ -79,7 +80,7 @@ img {
     position: absolute;
     top: 80px;
     left: 0px;
-    right: 0px;
+    right:0px;
     background-color: white;
     display: none;
     flex-direction: column;
@@ -93,6 +94,8 @@ img {
   .menu.active {
     /* display: block; */
     display: flex;
+    right: 0px;
+    left: 0px;
   }
 
   .Buttons {

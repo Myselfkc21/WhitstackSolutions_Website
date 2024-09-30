@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <div className="NavContainer" id="home">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Whitstack Solutions Logo" loading="lazy" width="auto" height="auto" title="Whitstack Solutions" />
 
       <div className={`menu ${menu ? "active" : null}`}>
         <a href="/">Home</a>
