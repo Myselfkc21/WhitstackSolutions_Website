@@ -6,8 +6,10 @@
   margin-top: 100px;
   padding: 0 50px;
   padding-bottom: 20px;
-  background-color:#fff6db; /* Dark background color for contrast */
-  color: rgb(4, 4, 4); /* Adjust text color for better visibility */
+  background-color: #fff6db;
+  /* Dark background color for contrast */
+  color: rgb(4, 4, 4);
+  /* Adjust text color for better visibility */
 }
 
 .FooterContainer p {
@@ -69,11 +71,14 @@
 }
 
 @media (max-width: 768px) {
-  .FooterContainer {
+  .FooterContaine {
     padding: 20px;
     position: relative;
-    right: 100px;
-    margin-top: 50px;
+    left: 20px;
+    /* width: 100%; */
+
+    text-wrap: nowrap;
+    margin-top: 10px;
   }
 
   .top {
@@ -99,7 +104,7 @@
 }
 
 @media (max-width: 1330px) {
-  .FooterContainer {
+  .FooterContaine {
     width: 100%;
   }
 }

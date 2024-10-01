@@ -31,18 +31,21 @@
 
 .client img {
   filter: grayscale(100%);
-  width: 300px;
+  width: max-content;
   object-fit: cover;
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .client:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  /* Increased shadow on hover */
 }
 
 .client:hover img {
-  filter: grayscale(0%); /* Remove grayscale on hover */
+  filter: grayscale(0%);
+  /* Remove grayscale on hover */
 }
 
 @media screen and (max-width: 768px) {
@@ -52,7 +55,7 @@
     gap: 30px;
   }
 
-  
+
   h2 {
     font-size: 40px;
   }
@@ -64,7 +67,8 @@
 
   .client {
     padding: 40px;
-    width: auto; /* Adjusted size for smaller screens */
+    width: auto;
+    /* Adjusted size for smaller screens */
     height: 150px;
   }
 }
@@ -78,6 +82,7 @@
 
 @media (max-width: 1200px) {
   .clients {
-    flex-direction: column; /* Stack clients vertically on smaller screens */
+    flex-direction: column;
+    /* Stack clients vertically on smaller screens */
   }
 }
