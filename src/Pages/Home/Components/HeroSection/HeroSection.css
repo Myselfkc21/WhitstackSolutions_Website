@@ -64,10 +64,47 @@ p {
   transform: scale(1.1);
 }
 
+@media (max-width: 1800px) {
+  .container {
+    margin: 0 150px; /* Slightly reduce margins */
+    margin-top: 75px;
+  }
+
+  .welcomePart {
+    width: 600px;
+    gap: 25px; /* Slightly increase gap between elements */
+  }
+
+  h1 {
+    font-size: 45px; /* Scale down the font slightly */
+  }
+
+  p {
+    font-size: 20px; /* Scale the font size */
+    line-height: 1.6; /* Improve readability */
+  }
+
+  .Images {
+    height: 650px; /* Adjust height for images */
+  }
+
+  #img1 {
+    width: 850px; /* Adjust globe image size */
+    left: 800px;
+    top: 130px;
+  }
+
+  #img2 {
+    width: 650px; /* Adjust dynamic image size */
+    height: 500px;
+    left: 100px;
+  }
+}
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: row;
-    gap: 20px;
+    gap: 60px;
   }
 
   #img1 {
@@ -82,7 +119,7 @@ p {
     width: 30%;
     margin-left: 0;
     position: relative;
-    right: 350px;
+    right:350px;
     padding: 30px;
   }
 
@@ -143,5 +180,40 @@ p {
   p {
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    margin: 0 200px;
+    margin-top: 100px;
+  }
+
+  .welcomePart {
+    width: 1000px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .Images {
+    height: 700px;
+  }
+
+  #img1 {
+    width: 900px;
+    left: 1350px;
+    top: 150px;
+  }
+
+  #img2 {
+    width: 700px;
+    height: 550px;
+    left: 250px;
   }
 }

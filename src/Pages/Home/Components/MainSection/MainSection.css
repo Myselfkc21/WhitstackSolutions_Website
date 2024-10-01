@@ -78,6 +78,7 @@
   }
 }
 
+
 @media (max-width: 1330px) {
   .Container {
     flex-direction: column;
@@ -166,3 +167,4 @@
     }
   }
 }
+
