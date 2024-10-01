@@ -16,9 +16,7 @@
       height: 591px;
       width: 470px;
       background-color: #facd49;
-      /* filter: blur(10px); */
       transition: transform 0.3s ease;
-      /* Add transition for movement */
     }
 
     .circle {
@@ -28,9 +26,7 @@
       background-color: #facd49;
       left: 275px;
       border-radius: 50%;
-      /* filter: blur(10px); */
       transition: transform 0.3s ease;
-      /* Add transition for movement */
     }
 
     #personImage {
@@ -80,43 +76,69 @@
       }
     }
   }
+}
 
+@media (max-width: 1330px) {
+  .Container {
+    flex-direction: column;
+    margin-left: 30px;
+    
+     .text h2{
+      margin-bottom: 0;
+      }
+    
+    .image {
+      width: min-content;
+      scale: 0.9;
 
+      .circle {
+        width: 600px;
+        position: absolute;
+        left: 200px;
+        background-color: #facd49;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .Container {
-    width: 100%;
+    width: auto;
     margin: 0 20px;
+    flex-direction: column;
     background-color: #facd49;
     margin-bottom: 50px;
-    padding: 20px;
+    padding: 30px;
     padding-right: 0;
     margin-right: 0;
+    position: relative;
+    left:10px;
 
     .image {
-      display: none;
+      display: none; /* Hide images on smaller screens */
     }
 
     .text {
       display: flex;
       flex-direction: column;
       margin: 0;
-      padding: 0;
-      width: 500px;
+      padding-right: 10px;
+      width: auto;
       align-items: center;
       justify-content: center;
       gap: 10px;
-
+      
+      
       h2 {
         font-weight: bolder;
-        font-size: 25px;
-        margin-left: 30px;
+        font-size: 25px; /* Adjusted for better readability */
+        text-align: center; /* Centered text */
       }
-
+      
       p {
         margin-left: 10px;
         margin-right: 10px;
+        text-align: unset; /* Center text for better alignment */
       }
 
       button {
@@ -130,18 +152,17 @@
   .text {
     width: 100%;
 
-    h1 {
-      font-size: 2px;
-      /* You may want to adjust this */
+    h2 {
+      font-size: 20px; /* Adjusted for smaller screens */
     }
 
     p {
-      font-size: 16px;
+      font-size: 16px; /* Ensure readability */
     }
 
     button {
-      width: 120px;
-      height: 45px;
+      width: 120px; /* Adjust button size */
+      height: 45px; /* Adjust button height */
     }
   }
 }

@@ -63,24 +63,22 @@ img {
   opacity: 0.5;
 }
 
-
 .hamburger {
   display: none;
   cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
   .NavContainer {
     margin: 0 20px;
-    margin-bottom: 0;
-    
+    gap: 30px;
   }
+
   .menu {
     position: absolute;
     top: 80px;
-    left: 0px;
-    right:0px;
+    left: 0;
+    right: 0;
     background-color: white;
     display: none;
     flex-direction: column;
@@ -92,10 +90,7 @@ img {
   }
 
   .menu.active {
-    /* display: block; */
     display: flex;
-    right: 0px;
-    left: 0px;
   }
 
   .Buttons {
@@ -113,10 +108,17 @@ img {
 
 @media (max-width: 480px) {
   img {
-    width:200px;
+    width: 200px;
   }
 
   .menu a {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .NavContainer {
+    gap: 30px;
+    text-wrap: nowrap;
   }
 }

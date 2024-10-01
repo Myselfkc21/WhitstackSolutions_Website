@@ -2,7 +2,6 @@
   margin: 60px auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -18,7 +17,6 @@
 }
 
 .client {
-  align-items: center;
   display: flex;
   justify-content: center;
   width: 400px;
@@ -28,6 +26,7 @@
   background-color: #f4f4f4;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  padding: 50px;
 }
 
 .client img {
@@ -38,64 +37,47 @@
 }
 
 .client:hover {
-  img {
-    filter: grayscale(0%);
-  }
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
 
-  transform: scale(1.05);
-  /* Slight zoom effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  /* Increased shadow on hover */
+.client:hover img {
+  filter: grayscale(0%); /* Remove grayscale on hover */
 }
 
 @media screen and (max-width: 768px) {
   .ClientContainer {
     margin: 50px;
-    /* padding: 10px; */
-    /* padding-left: 30px; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
     gap: 30px;
-    margin-bottom: 0;
+  }
 
-    h2 {
-      font-size: 40px;
-    }
+  
+  h2 {
+    font-size: 40px;
+  }
 
-    .clients {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      align-items: center;
-      justify-content: center;
+  .clients {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-      .client {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        width: auto;
-        /* Adjusted size for smaller images */
-        height: 150px;
-      }
-    }
+  .client {
+    padding: 40px;
+    width: auto; /* Adjusted size for smaller screens */
+    height: 150px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .ClientContainer {
     margin: 50px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
-    margin-bottom: 0;
   }
+}
 
+@media (max-width: 1200px) {
+  .clients {
+    flex-direction: column; /* Stack clients vertically on smaller screens */
+  }
 }

@@ -39,16 +39,11 @@ p {
   width: auto;
   height: 600px;
   display: flex;
-  #img2{
-    border-radius: 30px;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-  }
 }
 
 #img1 {
   position: absolute;
-  width: 800px;
+  width: 700px;
   height: auto;
   left: 750px;
   top: 110px;
@@ -57,9 +52,10 @@ p {
 #img2 {
   position: relative;
   top: 40px;
-  left: 200px;
+  left: 150px;
   width: 550px;
   height: 450px;
+  border-radius: 30px;
   transform: scale(1);
   transition: 0.5s ease-in-out;
 }
@@ -68,13 +64,40 @@ p {
   transform: scale(1.1);
 }
 
+@media (max-width: 1280px) {
+  .container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #img1 {
+    display: none;
+  }
+
+  .welcomePart {
+    width: 70%;
+  }
+
+  .Images {
+    width: 30%;
+    margin-left: 0;
+    position: relative;
+    right: 350px;
+    padding: 30px;
+  }
+
+  #img2 {
+    scale: 0.8;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    width: auto;
-    margin: 0 auto;
-    padding: 0 10px;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: 0 10px;
+    padding: 0 10px;
   }
 
   .Intro {
@@ -84,21 +107,20 @@ p {
   .welcomePart {
     width: auto;
     gap: 10px;
+    padding: 20px;
   }
 
   .welcomePart h1 {
     text-align: center;
-    font-size: 35px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin: 0;
   }
 
   .welcomePart p {
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 40px;
-    white-space: wrap;
-    text-align:justify;
-
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
   }
 
   .Images {
@@ -108,6 +130,8 @@ p {
 
 @media (max-width: 480px) {
   .container {
+    flex-direction: column;
+    align-items: center;
     margin: 0 10px;
     padding: 0;
   }

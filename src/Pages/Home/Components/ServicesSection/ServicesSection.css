@@ -128,7 +128,7 @@ h2 {
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-start;
-            margin-bottom: 600px;
+            margin-bottom: 0;
 
             .service {
                 width: auto;
@@ -159,12 +159,8 @@ h2 {
 
                     .right {
                         display: none;
-
-
                     }
-
                 }
-
             }
         }
     }

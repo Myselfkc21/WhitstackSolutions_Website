@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    width: 100%;
+    width:auto;
     /* margin: 0 auto; */
     position: relative;
     /* left: -20px; */
@@ -17,3 +17,4 @@
     left: -20px;
   }
 }
+
