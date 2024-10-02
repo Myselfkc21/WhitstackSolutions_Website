@@ -149,6 +149,14 @@ p {
   }
 }
 
+@media (max-width: 1440px) {
+  .container{
+    #img2{
+      scale: 0.9;
+      left: 50px;
+    }
+  }
+}
 @media (min-width: 2560px) {
   .container {
     margin: 0 200px;
