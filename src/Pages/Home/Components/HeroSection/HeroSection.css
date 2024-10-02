@@ -55,16 +55,13 @@ p {
   border-radius: 30px;
   transform: scale(1);
   transition: 0.5s ease-in-out;
-  /* margin-left: 50px; */
-  /* margin to keep it from the right corner */
 }
 
 #img2:hover {
   transform: scale(1.1);
 }
 
-
-@media (max-width: 1360px) {
+@media (max-width: 1430px) {
   .container {
     flex-direction: row;
     gap: 40px;
@@ -85,7 +82,7 @@ p {
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 950px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -118,7 +115,19 @@ p {
   }
 
   .Images {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #img2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    scale: 1;
   }
 }
 
@@ -137,6 +146,39 @@ p {
   p {
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  .Images {
+    height: 300px;
+    padding: 0;
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+
+  #img2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
   }
 }
 
@@ -160,7 +202,7 @@ p {
   }
 }
 
-@media (min-width: 2600px) {
+@media (min-width: 2560px) {
   .container {
     margin: 0 200px;
     margin-top: 100px;
@@ -183,9 +225,9 @@ p {
   }
 
   #img2 {
-    width: 700px;
+    width: 850px;
     height: 550px;
-    left: 200px;
     margin-left: 100px;
+    margin-right: 40px;
   }
 }

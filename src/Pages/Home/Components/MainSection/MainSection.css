@@ -78,6 +78,14 @@
   }
 }
 
+@media(max-width:950px){
+  .Container{
+    .image{
+    display: none;
+    }
+
+  }
+}
 
 @media (max-width: 1330px) {
   .Container {
@@ -90,7 +98,9 @@
     
     .image {
       width: min-content;
-      scale: 0.9;
+      scale: 0.8;
+      position: relative;
+      left: -100px;
 
       .circle {
         width: 600px;
