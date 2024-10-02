@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: 0 100px;
     margin-top: 60px;
-    margin-bottom: 500px;
+    margin-bottom: 00px;
 }
 
 h2 {
@@ -110,12 +110,17 @@ h2 {
         justify-content: space-between;
     }
 }
+@media (max-width:2300px){
+    .ServiceContainer{
+        margin-bottom:500px;
+    }
+}
 
 @media (max-width: 768px) {
     .ServiceContainer {
         margin: 0 50px;
         margin-left: 70px;
-
+        margin-bottom: 0;
         h2 {
             margin-bottom: 40px;
         }

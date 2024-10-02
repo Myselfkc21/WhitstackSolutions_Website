@@ -4,7 +4,7 @@ import "./HeroSection.css";
 const HeroSectioon = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Array of images you want to cycle through
+  // Array of images to cycle through
   const images = [
     "/image05.png",
     "/image1.jpg",
@@ -38,8 +38,15 @@ const HeroSectioon = () => {
         </div>
       </div>
       <div className="Images">
-        <img title="globe" id="img1" src="/image2.png" alt="a background image of globe" loading="lazy" width="auto" height="auto" />
-        <img title="It Services" id="img2" src={images[currentImage]} alt="Dynamic images" loading="lazy" width="auto" height="auto" />
+        <img
+          title="It Services"
+          id="img2"
+          src={images[currentImage]}
+          alt="Dynamic images"
+          loading="lazy"
+          width="auto"
+          height="auto"
+        />
       </div>
     </div>
   );
