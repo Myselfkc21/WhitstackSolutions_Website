@@ -31,8 +31,11 @@
 
 .client img {
   filter: grayscale(100%);
-  width: max-content;
+  width:250px;
+  display: flex;
+  height:76px;
   object-fit: cover;
+  padding-bottom: 10px;
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
