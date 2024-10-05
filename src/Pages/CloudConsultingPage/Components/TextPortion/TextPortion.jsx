@@ -8,7 +8,7 @@ const TextPortion = () => {
                <p>
                  Cloud technology is a transformative shift, offering scalability, reliability, and the potential to revolutionize your business operations. However, integrating private clouds, public clouds, and legacy IT environments can be complex. Whitstack’s Cloud Consulting Services are designed to help you navigate these challenges, finding the perfect hybrid cloud solution that fosters innovation and growth.
 
-                Cloud computing has become the go-to solution for overcoming data and technology challenges, but it also brings its own set of complexities. The vast array of cloud solutions available can create uncertainty about which options truly align with your business needs. Whitstack’s expert team provides comprehensive cloud adoption consulting and implementation services, ensuring you leverage cloud technology effectively to drive digital transformation.
+                Cloud computing has become the go-to solution for overcoming data and technology challenges, but it also brings its own set of complexities. The vast array of cloud solutions available can create uncertainty about which options truly align with your business needs. Whitstack’s expert team provides comprehensive cloud adoption consulting and implementation services for hyper scalers like amazon web server,Microsoft azure and Google cloud.
                 </p>
               <br />
                 <h2>Cloud Migrations</h2>

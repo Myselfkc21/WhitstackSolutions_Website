@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1300px) {
   .Container {
     flex-direction: column;
     margin-left: 30px;
@@ -97,6 +97,7 @@
       }
     
     .image {
+      display: none;
       width: min-content;
       scale: 0.8;
       position: relative;

@@ -61,6 +61,80 @@ p {
   transform: scale(1.1);
 }
 
+/* Media Queries for responsiveness */
+@media (min-width: 2560px) {
+  .container {
+    margin: 0 200px;
+    margin-top: 100px;
+  }
+
+  .welcomePart {
+    width: 1000px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .Images {
+    height: 700px;
+  }
+
+  #img2 {
+    width: 850px;
+    height: 550px;
+    margin-left: 100px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 2145px) {
+  .container {
+    gap: 100px;
+  }
+
+  #img2 {
+    left: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    gap: 50px;
+  }
+
+  #img2 {
+    left: 50px;
+  }
+}
+
+@media (max-width: 2559px) {
+  .container {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .Intro {
+    width: 50%;
+  }
+
+  .welcomePart {
+    width: auto;
+  }
+
+  .Images {
+    width: 60%;
+  }
+
+  #img2 {
+    left: 0;
+  }
+}
+
 @media (max-width: 1430px) {
   .container {
     flex-direction: row;
@@ -68,7 +142,7 @@ p {
   }
 
   .welcomePart {
-    width: 70%;
+    width: 80%;
   }
 
   .Images {
@@ -76,11 +150,63 @@ p {
   }
 
   #img2 {
-    scale: 0.8;
-    margin-left: 0px;
+    scale: 0.9;
+    /* margin: 0 auto; */
+    /* left: auto; */
+    margin-left: 200px;
     margin-right: 80px;
   }
 }
+
+
+@media(max-width:1300px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+    padding: 0 10px;
+  }
+
+  .Intro{
+    width: 100%;
+  }
+  .welcomePart{
+    width: auto;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .welcomePart h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .welcomePart p {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .Images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #img2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    scale: 0.7;
+  }
+}
+
 
 @media (max-width: 950px) {
   .container {
@@ -179,55 +305,5 @@ p {
     font-size: 14px;
     padding: 5px;
     text-align: center;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    gap: 50px;
-  }
-
-  #img2 {
-    left: 50px;
-  }
-}
-
-@media (min-width: 2145px) {
-  .container {
-    gap: 100px;
-  }
-
-  #img2 {
-    left: 100px;
-  }
-}
-
-@media (min-width: 2560px) {
-  .container {
-    margin: 0 200px;
-    margin-top: 100px;
-  }
-
-  .welcomePart {
-    width: 1000px;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  p {
-    font-size: 22px;
-  }
-
-  .Images {
-    height: 700px;
-  }
-
-  #img2 {
-    width: 850px;
-    height: 550px;
-    margin-left: 100px;
-    margin-right: 40px;
   }
 }
