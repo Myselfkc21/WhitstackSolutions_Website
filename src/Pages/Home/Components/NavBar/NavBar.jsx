@@ -17,7 +17,7 @@ const NavBar = () => {
       </div>
 
       <div className="Buttons">
-        <button id="login">Log In</button>
+        {/* <button id="login">og In</button> */}
         <button>Sign Up</button>
       </div>
 

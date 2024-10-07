@@ -4,20 +4,14 @@ import "./HeroSection.css";
 const HeroSectioon = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Array of images to cycle through
-  const images = [
-    "/image05.png",
-    "/image1.jpg",
-    "/software.jpg",
-  ];
+  const images = ["/image05.png", "/image1.jpg", "/software.jpg"];
 
-  // Change image every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
     }, 5000);
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval);
   }, [images.length]);
 
   return (
