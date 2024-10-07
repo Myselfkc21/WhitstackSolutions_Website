@@ -3,14 +3,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding: 20px; /* Added padding for small screens */
 
   .form-part {
     width: 100%;
+    max-width: 1200px; /* Set a max-width for larger screens */
 
     h2 {
+      /* margin: 0 autos; */
       font-size: 50px;
-      padding-left: 30px;
+      padding-left:10px;
     }
   }
 
@@ -26,11 +28,18 @@
       gap: 20px;
       padding-left: 30px;
       padding-top: 20px;
+      h3{
+        text-align: center;
+        /* margin: 0 auto; */
+      }
 
       .QandA {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        /* margin-right: 20px; */
+        padding: 20px;
+        padding-left: 0;
 
         #heads {
           color: black;
@@ -40,13 +49,14 @@
     }
 
     form {
+      margin-left: 20px;
       .ins {
         display: flex;
         flex-direction: column;
         gap: 7px;
       }
 
-      padding-right: 300px;
+      margin-right: 30px;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -54,17 +64,23 @@
       gap: 30px;
       margin-bottom: 50px;
 
-      input {
+      input, textarea {
         width: 400px;
         height: 40px;
         padding: 10px;
         font-size: 18px;
+        border: 1px solid #ccc; /* Added border for better visibility */
+        border-radius: 5px; /* Added border-radius for a cleaner look */
+      }
+
+      textarea {
+        resize: none; /* Disable resizing of the textarea */
+        height: 100px; /* Set a fixed height for the textarea */
       }
 
       label {
         font-family: "Inter", sans-serif;
         font-weight: 700;
-
       }
 
       button {
@@ -72,47 +88,59 @@
         height: 40px;
         padding: 10px;
         font-size: 18px;
+        background-color: #5d50c6; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
       }
-
     }
   }
 }
 
+/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
-  .FormContainer {
-    margin-left: 30px;
+  .FormContainer{
 
-    .form-part {
+
+    .formContent {
+      flex-direction: column; /* Stack the content on smaller screens */
+      align-items: center; 
+      
+      .left {
+        padding-left: 0; /* Remove left padding */
+        /* display: none; */
+        padding-top: 10px; /* Adjust top padding */
+      }
+      
+      form {
+        margin-right: 0; /* Remove right margin for small screens */
+        align-items: center; /* Center-align form items */
+      
+      
+      input, textarea, button {
+        width: 90%; /* Set width to 90% for better responsiveness */
+        max-width: 400px; /* Max width for inputs and button */
+      }
+    }
+    }
+  }
+  
+}
+@media (max-width: 480px) {
+  .FormContainer{
+    .form-part{
+      align-items: center;
+      justify-content: center;
+
       h2 {
-        padding-left: 5px;
+        font-size: 30px; /* Adjust heading size for smaller screens */
       }
-
-      .formContent {
-
-        .left {
-          display: none;
-        }
-
-        form {
-          padding: 0;
-          padding: 10px;
-
-          input {
-            width: auto;
-          }
-
-          textarea {
-            width: 225px;
-            height: 90px;
-          }
-
-          button {
-            width: auto;
-          }
-
-
-        }
-      }
+    }
+    
+    input, textarea, button {
+      width: 95%; /* Set width to 95% for very small screens */
     }
   }
 }

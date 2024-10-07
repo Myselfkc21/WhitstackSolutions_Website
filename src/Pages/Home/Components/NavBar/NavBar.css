@@ -15,17 +15,58 @@ img {
   display: flex;
   align-items: center;
   gap: 60px;
+  p{
+    color: #000000;
+    text-wrap: nowrap;
+    font-weight: bold;
+  }
 }
 
-.menu a {
+.menu a,p {
   text-decoration: none;
   color: black;
   font-size: 16px;
   font-weight: bold;
 }
 
-.menu a:hover {
+.menu a:hover,p:hover {
   opacity: 0.5;
+}
+
+/* Dropdown styling */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px; /* Adjust this to control distance below "Our Services" */
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  text-wrap: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: flex;
 }
 
 .Buttons {
