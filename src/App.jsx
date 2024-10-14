@@ -8,6 +8,7 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import WebDevPage from "./Pages/WebDevPage/WebDevPage";
 import CloudConsultingPage from "./Pages/CloudConsultingPage/CloudConsultingPage";
 import AIMLPage from "./Pages/AIMLPage/AIMLPage";
+import HardwareResell from "./Pages/HardwareResell/HardwareResell";
 function App() {
   const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ function App() {
     {
       path: "/service3/",
       element: <AIMLPage />
+    },
+    {
+      path: "/service5/",
+      element: <HardwareResell />
     }
   ]);
 

@@ -15,21 +15,21 @@ img {
   display: flex;
   align-items: center;
   gap: 60px;
-  p{
+  .menu p{
     color: #000000;
     text-wrap: nowrap;
     font-weight: bold;
   }
 }
 
-.menu a,p {
+.menu a,.menu p {
   text-decoration: none;
   color: black;
   font-size: 16px;
   font-weight: bold;
 }
 
-.menu a:hover,p:hover {
+.menu a:hover,.menu p:hover {
   opacity: 0.5;
 }
 
@@ -99,10 +99,10 @@ img {
   border: none;
   cursor: pointer;
 }
-
+/* 
 #login:hover {
   opacity: 0.5;
-}
+} */
 
 .hamburger {
   display: none;

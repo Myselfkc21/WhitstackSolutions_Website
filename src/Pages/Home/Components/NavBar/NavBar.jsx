@@ -27,7 +27,7 @@ const NavBar = () => {
           className="dropdown-container"
           onMouseEnter={() => setDropdown(true)}
           // onMouseLeave={() => szetDropdown(false)}
-          style={{cursor:"pointer"}}
+          style={{ cursor: "pointer" }}
         >
           <p>Our Services</p>
 
@@ -37,6 +37,7 @@ const NavBar = () => {
             <a href="/service2">Cloud Consulting Services</a>
             <a href="/service3">AI/ML Services</a>
             <a href="/service4">IT Staffing Services</a>
+            <a href="/service5">IT Hardware Resell</a>
           </div>
         </div>
 
@@ -44,7 +45,7 @@ const NavBar = () => {
       </div>
 
       <div className="Buttons">
-      <button id="login">Log in</button>
+        <button id="login">Log in</button>
         <button>Sign Up</button>
       </div>
 
