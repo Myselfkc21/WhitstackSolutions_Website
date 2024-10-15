@@ -9,6 +9,7 @@ import WebDevPage from "./Pages/WebDevPage/WebDevPage";
 import CloudConsultingPage from "./Pages/CloudConsultingPage/CloudConsultingPage";
 import AIMLPage from "./Pages/AIMLPage/AIMLPage";
 import HardwareResell from "./Pages/HardwareResell/HardwareResell";
+import { AboutUs } from "./Pages/AboutUssPage/AboutUs";
 function App() {
   const router = createBrowserRouter([
     {
@@ -21,24 +22,28 @@ function App() {
     },
     {
       path: "/contactus/",
-      element: <ContactUs />
+      element: <ContactUs />,
     },
     {
       path: "/service4/",
-      element: <ITStafingPage></ITStafingPage>
+      element: <ITStafingPage></ITStafingPage>,
     },
     {
       path: "/service2/",
-      element: <CloudConsultingPage />
+      element: <CloudConsultingPage />,
     },
     {
       path: "/service3/",
-      element: <AIMLPage />
+      element: <AIMLPage />,
     },
     {
       path: "/service5/",
-      element: <HardwareResell />
-    }
+      element: <HardwareResell />,
+    },
+    {
+      path: "/aboutus/",
+      element: <AboutUs />,
+    },
   ]);
 
   return (

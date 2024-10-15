@@ -38,7 +38,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 12690px) {
+@media (max-width: 1269px) {
     .OurStoryContainer {
         flex-direction: column;
         height: auto;
@@ -63,7 +63,7 @@
 
     .OurStoryImages img {
         width: 100%;
-        display: none;
+        /* display: none; */
     }
 }
 

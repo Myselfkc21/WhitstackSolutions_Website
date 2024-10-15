@@ -1,0 +1,75 @@
+.OurValues{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* Dark background color for contrast */
+    color: rgb(4, 4, 4);
+
+    .OurValuesText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .Points{
+        display:grid;
+        grid-template-columns:2fr 2fr ;
+        gap: 80px;
+        .Point{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            h1{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 20px;
+            }
+
+            .PointHead{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                justify-content:start;
+                gap: 20px;
+                h1{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    padding: 8px;
+                    background-color: rgba(255, 121, 4, 0.526);
+                    border-radius: 10px;
+                }
+            }
+            .PointBody{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

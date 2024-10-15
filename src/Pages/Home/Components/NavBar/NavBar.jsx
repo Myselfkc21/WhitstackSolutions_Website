@@ -42,10 +42,10 @@ const NavBar = () => {
         </div>
 
         <a href="/contactus">Contact</a>
+        <a href="/aboutus">About Us</a>
       </div>
 
       <div className="Buttons">
-        <button id="login">Log in</button>
         <button>Sign Up</button>
       </div>
 
