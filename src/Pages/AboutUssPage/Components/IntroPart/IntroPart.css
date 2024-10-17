@@ -3,7 +3,8 @@
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
-    height: 75vh;
+    height: 50vh;
+    padding-top: 100px;
     gap: 50px;
     /* Dark background color for contrast */
     color: rgb(4, 4, 4);

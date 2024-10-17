@@ -7,6 +7,7 @@ import PartnersAndClients from "./Components/PartnersAndClients/PatnersAndClient
 import "./Home.css";
 import FooterSection from "./Components/Footers/FooterSection";
 import ClientSection from "./Components/ClientsSection/ClientSection";
+import MainSection2 from "./Components/MainSection2/MainSection2";
 import { Helmet } from "react-helmet-async";
 const Home = () => {
   return (
@@ -20,7 +21,8 @@ const Home = () => {
 
       <div className="Homes">
         <HeroSectioon></HeroSectioon>
-        <MainSection></MainSection>
+        {/* <MainSection></MainSection> */}
+        {/* <MainSection2></MainSection2> */}
         <ServicesSection></ServicesSection>
         <PartnersAndClients></PartnersAndClients>
         <ClientSection></ClientSection>

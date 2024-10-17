@@ -1,22 +1,11 @@
 import React from "react";
-import "./MainSection.css";
+import "./ms.css";
 const MainSection = () => {
   return (
-    <div className="Container" id="">
+    <div className="C">
       <div className="image">
-        <div className="square"></div>
-        <div className="circle"></div>
-        <img
-          title=" a person working/thinking"
-          id="personImage"
-          src="/image3.png"
-          alt="an image of a person working/thinking"
-          loading="lazy"
-          width="auto"
-          height="auto"
-        />
+        {/* <img src="./mainSection.png" alt="" /> */}
       </div>
-
       <div className="text">
         <h2>
           Focus On Your Core Business And Leave The Problem Solving To Whitstack

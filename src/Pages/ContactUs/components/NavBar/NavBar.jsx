@@ -28,7 +28,7 @@ const NavBar = () => {
           onMouseEnter={() => setDropdown(true)}
           // onMouseLeave={() => szetDropdown(false)}
         >
-          <p style={{cursor:"pointer"}}>Our Services</p>
+          <p style={{ cursor: "pointer" }}>Our Services</p>
 
           {/* Dropdown Menu */}
           <div className={`dropdown-menu ${dropdown ? "active" : ""}`}>
@@ -43,7 +43,7 @@ const NavBar = () => {
       </div>
 
       <div className="Buttons">
-      <button id="login">Log in</button>
+        <button id="login">Log in</button>
         <button>Sign Up</button>
       </div>
 

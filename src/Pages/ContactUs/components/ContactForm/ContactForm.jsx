@@ -36,22 +36,40 @@ const ContactForm = () => {
             <h3>Ask How We Can Help You</h3>
             <div className="QandA">
               <p>
-                At Whitstack Solutions, we value open communication and are here to assist you with your needs. Whether you have questions about our services, need support, or want to discuss a project, feel free to reach out to us.
+                At Whitstack Solutions, we value open communication and are here
+                to assist you with your needs. Whether you have questions about
+                our services, need support, or want to discuss a project, feel
+                free to reach out to us.
               </p>
-              <p id="heads" style={{ color: "black", padding: "10px 0px", fontWeight: "700", paddingBottom: "0" }}>Our Office</p>
+              <p
+                id="heads"
+                style={{
+                  color: "black",
+                  padding: "10px 0px",
+                  fontWeight: "700",
+                  paddingBottom: "0",
+                }}
+              >
+                Our Office
+              </p>
               <p style={{ color: "black" }}>
                 Whitstack Solutions <br />
                 T-hub, Raidurg, Knowledge City <br />
                 Hyderabad, Telangana, 500081 <br />
                 India.
               </p>
-              <p style={{marginTop:'20px'}}>
-                <b>
-                phone:
-                </b>
+              <hr />
+              <p>
+                Whitstack Solutions Inc <br /> Downingtown, PA USA- 19335
+              </p>
+
+              <p style={{ marginTop: "20px" }}>
+                <b>phone:</b>
               </p>
               <p>7330639555</p>
-              <p><b>Email:</b></p>
+              <p>
+                <b>Email:</b>
+              </p>
               <p>karthikj@whitstack.com</p>
             </div>
           </div>
@@ -70,7 +88,12 @@ const ContactForm = () => {
             </div>
             <div className="ins">
               <label htmlFor="mess">Your Message</label>
-              <textarea rows="auto" cols="auto" name="Message" id="mess"></textarea>
+              <textarea
+                rows="auto"
+                cols="auto"
+                name="Message"
+                id="mess"
+              ></textarea>
             </div>
             <button type="submit">SUBMIT</button>
           </form>

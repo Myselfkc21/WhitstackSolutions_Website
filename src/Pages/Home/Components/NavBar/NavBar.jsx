@@ -9,7 +9,7 @@ const NavBar = () => {
   const [dropdown, setDropdown] = useState(false);
 
   return (
-    <div className="NavContainer" id="home">
+    <div className="NavContainer" id="home" style={{ margin: "0px" }}>
       <img
         title="Whitstack Solutions"
         src={logo}
