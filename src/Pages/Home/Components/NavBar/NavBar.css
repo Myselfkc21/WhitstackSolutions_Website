@@ -5,31 +5,30 @@
   align-items: center;
   padding: 10px;
   background-color: transparent;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 img {
   width: 200px;
+  max-width: 100%; /* Ensures image doesn't overflow on small screens */
 }
 
 .menu {
   display: flex;
   align-items: center;
   gap: 60px;
-  .menu p{
-    color: #000000;
-    text-wrap: nowrap;
-    font-weight: bold;
-  }
 }
 
-.menu a,.menu p {
+.menu a,
+.menu p {
   text-decoration: none;
   color: black;
   font-size: 16px;
   font-weight: bold;
 }
 
-.menu a:hover,.menu p:hover {
+.menu a:hover,
+.menu p:hover {
   opacity: 0.5;
 }
 
@@ -41,7 +40,7 @@ img {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 30px; /* Adjust this to control distance below "Our Services" */
+  top: 30px;
   left: 0;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,8 +55,6 @@ img {
   text-decoration: none;
   color: black;
   font-size: 14px;
-  font-weight: normal;
-  text-wrap: nowrap;
 }
 
 .dropdown-menu a:hover {
@@ -90,19 +87,6 @@ img {
 .Buttons button:hover {
   background-color: #4431d1;
 }
-
-#login {
-  background-color: white;
-  color: #222831;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-/* 
-#login:hover {
-  opacity: 0.5;
-} */
 
 .hamburger {
   display: none;
@@ -160,6 +144,5 @@ img {
 @media (max-width: 1200px) {
   .NavContainer {
     gap: 30px;
-    text-wrap: nowrap;
   }
 }

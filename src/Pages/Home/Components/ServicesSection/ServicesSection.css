@@ -1,172 +1,156 @@
 .ServiceContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 40px;
     margin: 0 100px;
     margin-top: 60px;
-    margin-bottom: 00px;
-}
-
-h2 {
+    margin-bottom: 60px;
+  }
+  
+  h2 {
     font-size: 40px;
     margin: 20px;
     margin-left: 0;
     font-family: 'Archivo', 'sans-serif';
     margin-bottom: 30px;
-}
-
-.services {
+    text-align: center;
+  }
+  
+  .services {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 350px;
-    gap: 100px;
-    transition: justify-content 0.3s ease-in-out;
+    flex-direction: row;
     flex-wrap: wrap;
-
-    .service {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        max-width: 450px;
-        height: 100%;
-        background-color: rgba(199, 191, 191, 0.288);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
-        overflow: hidden;
-        position: relative;
-        transition: width 0.3s ease-in-out;
-
-        .left {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 30px;
-            transition: width 0.3s ease-in-out;
-            opacity: 1;
-
-            h3 {
-                font-size: 25px;
-                margin-bottom: 15px;
-                font-family: 'Archivo', 'sans-serif';
-            }
-
-            p {
-                font-size: 14px;
-                text-align: center;
-                margin-bottom: 10px;
-            }
-
-            button {
-                width: 90px;
-                height: 40px;
-                border-radius: 20px;
-                background-color: rgb(0, 0, 0);
-                color: white;
-                border: none;
-                outline: none;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: rgb(111, 111, 111);
-                }
-            }
-        }
-
-        .right {
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -50%;
-            transition: left 0.6s ease-in-out;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 20px;
-            }
-        }
-
-        &:hover .left {
-            width: 50%;
-            align-items: flex-start;
-            opacity: 1;
-
-            p {
-                text-align: unset;
-            }
-        }
-
-        &:hover .right {
-            left: 50%;
-        }
+    gap: 100px;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+  }
+  
+  .service {
+    display: grid;
+    grid-template-columns: repeat(minmax(50px, 1fr)); 
+    height: 100%;
+    max-width: 450px;
+    background-color: rgba(199, 191, 191, 0.288);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  .left {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  
+    h3 {
+      font-size: 25px;
+      margin-bottom: 15px;
+      font-family: 'Archivo', 'sans-serif';
+      text-align: center;
     }
-
-    .services:hover {
-        justify-content: space-between;
+  
+    p {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 10px;
     }
-}
-@media (max-width:2300px){
-    .ServiceContainer{
-        margin-bottom:500px;
+  
+    button {
+      width: 90px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
     }
-}
-
-@media (max-width: 768px) {
+  
+    button:hover {
+      background-color: rgb(111, 111, 111);
+    }
+  }
+  
+  .right {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    transition: left 0.6s ease-in-out;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+  
+  .service:hover .right {
+    left: 50%;
+  }
+  
+  /* Larger Screens */
+  @media (min-width: 1200px) {
     .ServiceContainer {
-        margin: 0 50px;
-        margin-left: 70px;
-        margin-bottom: 0;
-        h2 {
-            margin-bottom: 40px;
-        }
-
-        .services {
-            margin-left: 30px;
-            display: flex;
-            gap: 30px;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            margin-bottom: 0;
-
-            .service {
-                width: auto;
-                height: max-content;
-                padding: 20px;
-                padding-bottom: 10px;
-                margin: 10px;
-
-                .left {
-                    width: 100%;
-                    align-items: center;
-
-                    h3 {
-                        font-size: 20px;
-                        text-align: center;
-                    }
-
-                    p {
-                        display: none;
-                    }
-
-                    button {
-                        width: max-content;
-                        padding: 10px;
-                        height: max-content;
-                        margin-bottom: 15px;
-                    }
-
-                    .right {
-                        display: none;
-                    }
-                }
-            }
-        }
+      margin: 0 150px;
     }
-}
+  }
+  
+  /* Mobile and smaller tablets */
+  @media (max-width: 768px) {
+    .ServiceContainer {
+      margin: 0 50px;
+      padding-top: 0px;
+    }
+  
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .services {
+      grid-template-columns: repeat( minmax(350px, 1fr)); /* Maintain horizontal layout on laptops */
+      gap: 60px;
+    }
+  
+    .service {
+      padding: 10px;
+      height: max-content;
+    }
+  
+    .left {
+      padding: 20px;
+  
+      h3 {
+        font-size: 20px;
+        text-align: center;
+      }
+  
+      p {
+        display: none;
+      }
+  
+      button {
+        width: auto;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  
+    .right {
+      display: none;
+    }
+  }
