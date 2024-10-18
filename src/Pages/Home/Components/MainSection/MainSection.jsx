@@ -17,7 +17,7 @@ const MainSection = () => {
         />
       </div>
 
-      <div className="text">
+      <div className="texts">
         <h2>
           Focus On Your Core Business And Leave The Problem Solving To Whitstack
           Expets <br /> IT consulting, Software development, Cloud migrations

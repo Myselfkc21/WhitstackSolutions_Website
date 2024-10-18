@@ -42,7 +42,7 @@
   height: auto; /* Maintain image aspect ratio */
 }
 
-.text {
+.texts {
   position: relative;
   left: -100px;
   max-width: 40%;
@@ -51,13 +51,13 @@
   gap: 20px;
 }
 
-h2 {
+.image h2 {
   font-size: 24px;
   line-height: 1.5;
   text-align: start;
 }
 
-p {
+.image p {
   font-size: 18px;
   color: #191825;
   opacity: 0.7;
@@ -66,7 +66,7 @@ p {
   line-height: 1.5;
 }
 
-button {
+.texts button {
   background-color: #010101;
   border: none;
   border-radius: 20px;
@@ -79,7 +79,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.image button:hover {
   background-color: #face494d;
   color: black;
 }
@@ -102,17 +102,17 @@ button:hover {
     display: none;
   }
 
-  .text {
+  .texts {
     left: 0;
     max-width: 100%;
     padding: 0 50px;
   }
 
-  h2 {
+ .text h2 {
     font-size: 22px;
   }
 
-  p {
+  .text p {
     font-size: 16px;
   }
 }
@@ -126,15 +126,15 @@ button:hover {
     display: none; /* Smaller on smaller screens */
   }
 
-  .text h2 {
+  .texts h2 {
     font-size: 17px;
   }
 
-  p {
+  .texts p {
     font-size: 14px;
   }
 
-  button {
+  .texts button {
     width: 120px;
     height: 45px;
   }
@@ -148,19 +148,19 @@ button:hover {
   .square, .circle {
     width: 25%; /* Further reduce size for mobile screens */
   }
-  .text{
+  .texts{
     width: 100%;
   }
 
-  h2 {
+  .texts h2 {
     font-size: 18px;
   }
 
-  p {
+  .texts p {
     font-size: 12px;
   }
 
-  button {
+  .texts button {
     width: 100px;
     height: 40px;
   }
