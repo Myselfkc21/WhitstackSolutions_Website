@@ -146,3 +146,54 @@ img {
     gap: 30px;
   }
 }
+
+/* Dropdown styling */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ffffff; /* Changed to solid white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 999;
+  flex-direction: column;
+  width: 200px;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Prevent hover when hidden */
+}
+
+.dropdown-menu.active {
+  opacity: 1; /* Show the menu */
+  pointer-events: all; /* Enable interaction */
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: 'Archivo', sans-serif;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Ensures the dropdown stays open when hovering over the container */
+.dropdown-container:hover .dropdown-menu {
+  display: flex;
+  opacity: 1; /* Ensure visibility on hover */
+  pointer-events: all;
+}
+
+.menu p {
+  cursor: pointer; /* Ensure cursor changes on dropdown */
+}
