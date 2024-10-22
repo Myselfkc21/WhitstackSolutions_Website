@@ -8,6 +8,10 @@ const NavBar = () => {
   const [menu, setMenu] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
+  const handleDropdownClick = () => {
+    setDropdown(!dropdown); // Toggle the dropdown menu on click for mobile
+  };
+
   return (
     <div className="NavContainer" id="home" style={{ margin: "0px" }}>
       <img
@@ -19,14 +23,13 @@ const NavBar = () => {
         height="auto"
       />
 
-      <div className={`menu ${menu ? "active" : null}`}>
+      <div className={`menu ${menu ? "active" : ""}`}>
         <a href="/">Home</a>
 
         {/* Dropdown Container */}
         <div
           className="dropdown-container"
-          onMouseEnter={() => setDropdown(true)}
-          // onMouseLeave={() => szetDropdown(false)}
+          onClick={handleDropdownClick} // Handle clicks for touch devices
           style={{ cursor: "pointer" }}
         >
           <p>Our Services</p>

@@ -1,33 +1,100 @@
-.IntroPart{
+.IntroPart {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     height: 50vh;
     padding-top: 100px;
     gap: 50px;
-    /* Dark background color for contrast */
     color: rgb(4, 4, 4);
-    /* Adjust text color for better visibility */
-    .IntroText{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-evenly;
-        width: 50%;
-        gap: 30px;
-        h1{
-            font-size: 50px;
-            font-weight: bold;
-        }
-        p{
-            font-size: 20px;
-        }
+  }
+  
+  .IntroText {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: 30px;
+  }
+  
+  .IntroText h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .IntroText p {
+    font-size: 20px;
+  }
+  
+  .IntroImage {
+    width: 50%;
+  }
+  
+  .IntroImage img {
+    width: 100%;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    .IntroPart {
+      flex-direction: column;
+      height: auto;
+      padding-top: 50px;
+      gap: 30px;
     }
-    .IntroImage{
-        width: 50%;
-        img{
-            width: 100%;
-        }
+  
+    .IntroText {
+      width: 80%;
+      text-align: center;
+      align-items: center;
     }
-}
+  
+    .IntroText h1 {
+      font-size: 40px;
+    }
+  
+    .IntroText p {
+      font-size: 18px;
+    }
+  
+    .IntroImage {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .IntroPart {
+      padding-top: 30px;
+    }
+  
+    .IntroText h1 {
+      font-size: 35px;
+    }
+  
+    .IntroText p {
+      font-size: 16px;
+    }
+  
+    .IntroImage {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .IntroPart {
+      padding-top: 20px;
+    }
+  
+    .IntroText h1 {
+      font-size: 30px;
+    }
+  
+    .IntroText p {
+      font-size: 14px;
+    }
+  
+    .IntroImage {
+      width: 100%;
+    }
+  }

@@ -99,11 +99,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .NavContainer {
-    margin: 0 20px;
-    gap: 30px;
-  }
-
   .menu {
     position: absolute;
     top: 80px;
@@ -117,22 +112,19 @@ img {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    z-index: 999; /* Ensure it overlaps other elements */
   }
 
   .menu.active {
-    display: flex;
+    display: flex; /* Make the menu visible on mobile when active */
   }
 
   .Buttons {
-    display: none;
+    display: none; /* Hide buttons on mobile */
   }
 
   .hamburger {
-    display: block;
-  }
-
-  img {
-    width: 250px;
+    display: block; /* Show hamburger icon on mobile */
   }
 }
 
