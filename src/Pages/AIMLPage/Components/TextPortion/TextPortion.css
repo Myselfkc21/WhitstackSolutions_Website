@@ -8,6 +8,7 @@
         font-size: 50px;
         margin-bottom: 30px;
         margin-top: 50px;
+        text-wrap: wrap;
     }
     .text{
         font-size: 20px;
@@ -29,10 +30,11 @@
 @media (max-width: 768px) {
     .TextPartCont{
         margin: 0 30px;
-     .TextPartCont   h4{
+     .TextPartCont h4,h1{
             font-size: 20px;
             margin-bottom: 0;
             padding-bottom: 0;
+            text-wrap: wrap;
         }
         .text{
             margin-bottom: 0px;

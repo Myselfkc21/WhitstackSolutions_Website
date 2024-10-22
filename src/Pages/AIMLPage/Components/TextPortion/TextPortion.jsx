@@ -2,7 +2,7 @@ import React from "react";
 import "./TextPortion.css";
 const TextPortion = () => {
   return (
-    <div className="TextPartCont">
+    <div className="TextPartCont" style={{ marginTop: "50px" }}>
       <h1>Artificial Intelligence and Machine Learning Services</h1>
       <div className="text">
         <p>

@@ -23,7 +23,7 @@
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     position: relative;
   }
   

@@ -2,7 +2,7 @@ import React from "react";
 
 const TextPortion = () => {
   return (
-    <div className="TextPartCont">
+    <div className="TextPartCont" style={{ marginTop: "50px" }}>
       <h1>IT Hardware Reselling Services</h1>
       <div className="text">
         <p>
