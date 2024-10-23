@@ -36,6 +36,7 @@ const NavBar = () => {
             <a href="/service2">Cloud Consulting Services</a>
             <a href="/service3">AI/ML Services</a>
             <a href="/service4">IT Staffing Services</a>
+            <a href="/service5">IT Hardware Resell</a>
           </div>
         </div>
 

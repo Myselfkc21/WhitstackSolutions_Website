@@ -111,11 +111,11 @@ const ServicesSection = () => {
           </div>
           <div className="right">
             <img
-              title="IT staffing Services"
+              title="IT Hardware reselling Services"
               width="auto"
               height="auto"
               loading="lazy"
-              src="https://img.freepik.com/free-photo/young-person-during-intership_23-2149315632.jpg?w=360&t=st=1727531894~exp=1727532494~hmac=b896a087847709cc4b300d916b3145a95fe8fe1c654541db426afc672a7008e7"
+              src="https://images.unsplash.com/photo-1659540546005-1c30317c2b21?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="AI/ML Services"
             />
           </div>
