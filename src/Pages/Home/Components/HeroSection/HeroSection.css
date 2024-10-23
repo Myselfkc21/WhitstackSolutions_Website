@@ -6,11 +6,85 @@
   flex-direction: row;
 }
 
+
 .Intro {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
+
+/* Lava lamp-like blobs */
+/* Lava lamp-like blobs with complementary colors */
+.blob {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  animation: moveBlobs 15s infinite ease-in-out;
+  filter: blur(5px);
+}
+
+.blob1 {
+  width: 300px;
+  height: 300px;
+  top: 0px;
+  left: -50px;
+  background: #F9A76A;
+  /* background: radial-gradient(circle, rgba(164, 232, 224, 0.6), rgba(130, 200, 190, 0.8)); Soft Cyan */
+}
+
+.blob2 {
+  width: 250px;
+  height: 250px;
+  top: 50px;
+  right: -80px;
+  background: #F4A261;
+  /* background: radial-gradient(circle, rgba(195, 164, 232, 0.6), rgba(150, 130, 210, 0.8)); Pastel Purple */
+}
+
+.blob3 {
+  width: 400px;
+  height: 400px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #F8CBAE;
+  /* background: radial-gradient(circle, rgba(248, 164, 168, 0.6), rgba(240, 130, 134, 0.8)); Light Coral */
+}
+
+/* Add another blob for balance */
+.blob4 {
+  width: 200px;
+  height: 200px;
+  top: 300px;
+  left: 20px;
+  background: #F9A76A;
+  /* background: radial-gradient(circle, rgba(248, 232, 164, 0.6), rgba(240, 210, 130, 0.8)); Warm Yellow */
+}
+
+/* Animation for blob movement */
+@keyframes moveBlobs {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.container {
+  margin: 0 100px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  position: relative; /* Required to position the spheres properly */
+  z-index: 1; /* Ensures that content stays on top */
+}
+
 
 .welcomePart {
   margin-top: 50px;
@@ -75,7 +149,18 @@ p {
   transition: 0.5s ease-in-out;
   animation: theaterScreenEffect 5s ease-in-out infinite; /* Add the theater screen effect */
   transform-origin: center;
+  animation: none;
 }
+
+/* Container for Hero Section */
+.container {
+  position: relative;
+  margin: 0 100px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
 
 #img2:hover {
   transform: scale(1.05); /* Slight zoom on hover */
@@ -178,6 +263,14 @@ p {
   }
 }
 
+@media (max-width:1300px) {
+  .Images{
+    width: 50%;
+    position: relative;
+    left: 25px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     flex-direction: column;
@@ -218,6 +311,7 @@ p {
     width: 100%;
     margin: 0;
     padding: 0;
+    left: 0;
   }
 
   #img2 {
@@ -226,9 +320,17 @@ p {
     margin: 0;
     scale: 0.7;
     animation: none;
+    
+  }
+  .blob2{
+    top: 200px;
   }
 }
-
+@media (max-width:768px) {
+  .blob{
+    display: none;
+  }
+}
 @media (max-width: 950px) {
   .container {
     flex-direction: column;

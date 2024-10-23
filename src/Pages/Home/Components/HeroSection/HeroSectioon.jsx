@@ -39,6 +39,7 @@ const HeroSectioon = () => {
           </p>
         </div>
       </div>
+
       <div className="Images">
         <img
           title="It Services"
@@ -50,6 +51,10 @@ const HeroSectioon = () => {
           height="auto"
         />
       </div>
+
+      <div className="blob blob1"></div>
+      <div className="blob blob2"></div>
+      <div className="blob blob3"></div>
     </div>
   );
 };
