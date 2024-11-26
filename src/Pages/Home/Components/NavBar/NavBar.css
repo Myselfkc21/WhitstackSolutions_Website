@@ -154,7 +154,7 @@ img {
   position: absolute;
   top: 30px;
   left: 0;
-  background-color: #ffffff; /* Changed to solid white */
+  background-color: #ffffff ; /* Changed to solid white */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
   padding: 10px;
   border-radius: 8px;

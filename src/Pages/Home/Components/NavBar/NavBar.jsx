@@ -32,9 +32,14 @@ const NavBar = () => {
           onClick={handleDropdownClick}
           style={{ cursor: "pointer" }}
         >
-          <a style={{ color: "black", cursor: "pointer", animation: "none" }}>
+          <p
+            style={{
+              color: "black",
+              cursor: "pointer",
+            }}
+          >
             Our Services
-          </a>
+          </p>
 
           {/* Dropdown Menu */}
           <div className={`dropdown-menu ${dropdown ? "active" : ""}`}>
