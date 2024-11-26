@@ -7,10 +7,10 @@ const OurValues = () => {
       <div className="OurValuesText">
         <h2>Our Values</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim veniam
-          molestias possimus. Harum sunt recusandae laudantium exercitationem
-          molestiae itaque unde incidunt autem ex culpa, dignissimos ea maxime,
-          suscipit, possimus accusamus!
+          We are committed to delivering exceptional value by putting our
+          customers first, driving innovation to meet their evolving needs, and
+          staying agile ,cost efficient and adaptable in a rapidly changing
+          world.
         </p>
       </div>
       <div className="Points">

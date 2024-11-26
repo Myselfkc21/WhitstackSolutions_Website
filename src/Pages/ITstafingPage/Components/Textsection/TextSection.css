@@ -1,43 +1,134 @@
-.TextPartContainer{
+.TextSectionWrapper {
     display: flex;
-    align-items:start;
+    align-items: start;
     justify-content: center;
     flex-direction: column;
     margin: 0 60px;
-    h1{
+    animation: containerFadeIn 1s ease-out;
+    h1 {
         font-size: 40px;
         margin-bottom: 30px;
         margin-top: 50px;
+        background: linear-gradient(45deg, #2196F3, #00BCD4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
-    .text{
+    .content {
         font-size: 20px;
         gap: 30px;
         margin-bottom: 30px;
-        font-family: 'Inter', 'sans-serif';
+        font-family: 'Inter', sans-serif;
         text-align: unset;
-        P{
+        animation: textFadeIn 1s ease-out;
+        p {
             margin: 20px;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+            animation-delay: 0.3s;
         }
-        h4{
+        h4 {
             margin: 20px;
-
+            opacity: 0;
+            animation: slideInRight 0.6s ease-out forwards;
+            animation-delay: 0.2s;
+            position: relative;
         }
-        ul{
+        ul {
             margin-left: 40px;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+            animation-delay: 0.4s;
         }
     }
 }
 
+@keyframes containerFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titleSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes lineGrow {
+    to {
+        width: 60px;
+    }
+}
+
 @media (max-width: 768px) {
-    .TextPartContainer{
+    .TextSectionWrapper {
         margin: 0 30px;
-        h4{
+        h4 {
             font-size: 20px;
             margin-bottom: 0;
             padding-bottom: 0;
         }
-        .text{
+        .content {
             margin-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .TextSectionWrapper {
+        margin: 0 20px;
+        h1 {
+            font-size: 30px;
+            text-wrap: balance;
         }
     }
 }

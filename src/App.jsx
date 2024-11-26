@@ -10,6 +10,7 @@ import CloudConsultingPage from "./Pages/CloudConsultingPage/CloudConsultingPage
 import AIMLPage from "./Pages/AIMLPage/AIMLPage";
 import HardwareResell from "./Pages/HardwareResell/HardwareResell";
 import { AboutUs } from "./Pages/AboutUssPage/AboutUs";
+import DigitalMarketing from "./Pages/DigitalMarketingPage/DigitalMarketing";
 function App() {
   const router = createBrowserRouter([
     {
@@ -17,32 +18,41 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/service1/",
+      path: "/Web-service-provider/",
       element: <WebDevPage />,
     },
     {
-      path: "/contactus/",
+      path: "/contact-us/",
       element: <ContactUs />,
     },
     {
-      path: "/service4/",
+      path: "/it-staffing-services/",
       element: <ITStafingPage></ITStafingPage>,
     },
     {
-      path: "/service2/",
+      path: "/cloud-computing-services/",
       element: <CloudConsultingPage />,
     },
     {
-      path: "/service3/",
+      path: "/ai-ml-services/",
       element: <AIMLPage />,
     },
     {
-      path: "/service5/",
+      path: "/it-hardware-reselling/",
       element: <HardwareResell />,
     },
     {
-      path: "/aboutus/",
+      path: "/about-us/",
       element: <AboutUs />,
+    },
+    {
+      path: "/digital-marketing-services/",
+      element: <DigitalMarketing />,
+    },
+    {
+      future: {
+        v7_startTransition: true, // Enable the v7 startTransition future flag
+      },
     },
   ]);
 

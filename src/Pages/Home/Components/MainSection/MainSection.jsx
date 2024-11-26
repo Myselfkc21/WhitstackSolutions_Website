@@ -31,7 +31,7 @@ const MainSection = () => {
           you need a part time or full-time resource.
         </p>
 
-        <button onClick={() => (window.location.href = "/contactus")}>
+        <button onClick={() => (window.location.href = "/contact-us")}>
           TALK TO US
         </button>
       </div>

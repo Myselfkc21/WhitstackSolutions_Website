@@ -17,6 +17,10 @@ const NavBar = () => {
         loading="lazy"
         width="auto"
         height="auto"
+        style={{
+          mixBlendMode: "color-burn",
+          objectFit: "contain",
+        }}
       />
 
       <div className={`menu ${menu ? "active" : null}`}>
@@ -32,19 +36,20 @@ const NavBar = () => {
 
           {/* Dropdown Menu */}
           <div className={`dropdown-menu ${dropdown ? "active" : ""}`}>
-            <a href="/service1">Web Development</a>
-            <a href="/service2">Cloud Consulting Services</a>
-            <a href="/service3">AI/ML Services</a>
-            <a href="/service4">IT Staffing Services</a>
-            <a href="/service5">IT Hardware Resell</a>
+            <a href="/Web-service-provider">Web Development</a>
+            <a href="/cloud-computing-services">Cloud Consulting Services</a>
+            <a href="/ai-ml-services">AI/ML Services</a>
+            <a href="/it-staffing-services">IT Staffing Services</a>
+            <a href="/it-hardware-reselling">IT Hardware Resell</a>
+            <a href="/digital-marketing-services">Digital Marketing Services</a>
           </div>
         </div>
 
-        <a href="/contactus">Contact</a>
+        <a href="/contact-us">Contact</a>
+        <a href="/about-us">About us</a>
       </div>
 
       <div className="Buttons">
-        <button id="login">Log in</button>
         <button>Sign Up</button>
       </div>
 

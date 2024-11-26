@@ -55,7 +55,7 @@ const ContactForm = () => {
               <p style={{ color: "black" }}>
                 Whitstack Solutions <br />
                 T-hub, Raidurg, Knowledge City <br />
-                Hyderabad, Telangana, 500081 <br />
+                Hyderabad, Telangana, 500032 <br />
                 India.
               </p>
               <hr />
@@ -63,14 +63,25 @@ const ContactForm = () => {
                 Whitstack Solutions Inc <br /> Downingtown, PA USA- 19335
               </p>
 
-              <p style={{ marginTop: "20px" }}>
+              <p style={{ marginTop: "20px" }} className="phone">
                 <b>phone:</b>
               </p>
-              <p>7330639555</p>
+              <div style={{ display: "flex", gap: "10px" }}>
+                <p>7330639555</p>
+                <div
+                  style={{
+                    width: "1px",
+                    height: "20px",
+                    backgroundColor: "#000",
+                  }}
+                ></div>
+                <p>+1 9173340128</p>
+              </div>
+
               <p>
                 <b>Email:</b>
               </p>
-              <p>karthikj@whitstack.com</p>
+              <p>info@whistack.com</p>
             </div>
           </div>
           <form onSubmit={onSubmit}>

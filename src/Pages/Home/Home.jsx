@@ -7,14 +7,18 @@ import PartnersAndClients from "./Components/PartnersAndClients/PatnersAndClient
 import "./Home.css";
 import FooterSection from "./Components/Footers/FooterSection";
 import ClientSection from "./Components/ClientsSection/ClientSection";
-import MainSection2 from "./Components/MainSection2/MainSection2";
 import { Helmet } from "react-helmet-async";
 const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home</title>
-        <meta name="description" content="Whitstack home page" />
+        <title>
+          Whitstack Solutions | Cloud, Web Development & IT Services
+        </title>
+        <meta
+          name="description"
+          content="Discover top-notch cloud computing, web development, AI/ML, IT staffing, and hardware reselling services at Whitstack Solutions. Empowering businesses with innovative tech solutions."
+        />
         <link rel="canonical" href="/" />
       </Helmet>
       <NavBar></NavBar>
@@ -22,7 +26,7 @@ const Home = () => {
       <div className="Homes">
         <HeroSectioon></HeroSectioon>
         <MainSection></MainSection>
-        {/* <MainSection2></MainSection2> */}
+
         <ServicesSection></ServicesSection>
         <PartnersAndClients></PartnersAndClients>
         <ClientSection></ClientSection>

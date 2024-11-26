@@ -3,98 +3,211 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px; /* Added padding for small screens */
-  gap: 100px;
+  padding: clamp(20px, 5vw, 40px);
+  background-color: #fafafa;
+  width: 100%;
+  
   .form-part {
     width: 100%;
-    max-width: 1200px; /* Set a max-width for larger screens */
+    max-width: 1200px;
 
     h2 {
-      /* margin: 0 autos; */
-      font-size: 50px;
-      padding-left:10px;
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 600;
+      color: #2d2d2d;
+      margin-bottom: clamp(20px, 4vw, 40px);
+      text-align: center;
+      animation: fadeInDown 0.8s ease-out;
     }
   }
 
   .formContent {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
-
+    gap: clamp(20px, 4vw, 60px);
+    width: 100%;
+    
     .left {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      padding-left: 30px;
-      padding-top: 20px;
-      h3{
-        text-align: center;
-        /* margin: 0 auto; */
+      gap: clamp(15px, 3vw, 30px);
+      padding: clamp(20px, 4vw, 40px);
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      animation: slideInLeft 0.8s ease-out;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        font-size: clamp(20px, 3vw, 24px);
+        color: #2d2d2d;
+        margin-bottom: clamp(10px, 2vw, 20px);
       }
 
       .QandA {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        /* margin-right: 20px; */
-        padding: 20px;
-        padding-left: 0;
+        gap: clamp(10px, 1.5vw, 15px);
+        color: #666;
+        line-height: 1.6;
+        font-size: clamp(14px, 2vw, 16px);
 
         #heads {
-          color: black;
+          color: #2d2d2d;
           font-weight: 600;
+          font-size: clamp(16px, 2vw, 18px);
+          margin-top: clamp(15px, 2vw, 20px);
+        }
+
+        hr {
+          border: none;
+          height: 1px;
+          background-color: #eee;
+          margin: clamp(15px, 2vw, 20px) 0;
         }
       }
     }
 
     form {
-      margin-left: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(15px, 2.5vw, 25px);
+      padding: clamp(20px, 4vw, 40px);
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      animation: slideInRight 0.8s ease-out;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
       .ins {
         display: flex;
         flex-direction: column;
-        gap: 7px;
+        gap: 8px;
+        width: 100%;
       }
 
-      margin-right: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: space-evenly;
-      gap: 30px;
-      margin-bottom: 50px;
-
       input, textarea {
-        width: 400px;
-        height: 40px;
-        padding: 10px;
-        font-size: 18px;
-        border: 1px solid #ccc; /* Added border for better visibility */
-        border-radius: 5px; /* Added border-radius for a cleaner look */
+        width: 100%;
+        padding: clamp(8px, 1.5vw, 12px) clamp(12px, 2vw, 16px);
+        font-size: clamp(14px, 1.5vw, 16px);
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        background-color: #fafafa;
+
+        &:focus {
+          outline: none;
+          border-color: #5d50c6;
+          box-shadow: 0 0 0 3px rgba(93, 80, 198, 0.1);
+          transform: scale(1.01);
+        }
+      }
+
+      input {
+        height: clamp(40px, 5vw, 48px);
       }
 
       textarea {
-        resize: none; /* Disable resizing of the textarea */
-        height: 100px; /* Set a fixed height for the textarea */
+        resize: none;
+        height: clamp(100px, 15vw, 120px);
       }
 
       label {
         font-family: "Inter", sans-serif;
-        font-weight: 700;
+        font-weight: 600;
+        font-size: clamp(12px, 1.5vw, 14px);
+        color: #2d2d2d;
       }
 
       button {
-        width: 420px;
-        height: 40px;
-        padding: 10px;
-        font-size: 18px;
-        background-color: #5d50c6; /* Button background color */
-        color: white; /* Button text color */
-        border: none; /* Remove border */
-        border-radius: 5px; /* Rounded corners */
-        cursor: pointer; /* Pointer cursor on hover */
+        width: 100%;
+        height: clamp(40px, 5vw, 48px);
+        font-size: clamp(14px, 1.5vw, 16px);
+        font-weight: 600;
+        background-color: #5d50c6;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: clamp(8px, 1vw, 10px);
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          background-color: #4a3fb0;
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(1px);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 0;
+          height: 0;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+          transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        &:active::after {
+          width: 200px;
+          height: 200px;
+        }
       }
     }
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -102,15 +215,18 @@
 
 @media (max-width: 768px) {
   .FormContainer{
-
+    padding: clamp(10px, 3vw, 20px);
+    padding: 20px;
 
     .formContent {
       flex-direction: column; /* Stack the content on smaller screens */
       align-items: center; 
       
+      
       .left {
-        padding-left: 0; /* Remove left padding */
+        padding-left: clamp(0px, 2vw, 20px); /* Remove left padding */
         /* display: none; */
+        align-items: center;
         padding-top: 10px; /* Adjust top padding */
       }
       
@@ -129,18 +245,74 @@
   
 }
 @media (max-width: 480px) {
-  .FormContainer{
-    .form-part{
+  .FormContainer {
+    padding: 10px;
+    
+    .form-part {
       align-items: center;
       justify-content: center;
+      width: 100%;
+      padding: 15px;
 
       h2 {
-        font-size: 30px; /* Adjust heading size for smaller screens */
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
       }
-    }
-    
-    input, textarea, button {
-      width: 95%; /* Set width to 95% for very small screens */
+
+      .formContent {
+        width: 100%;
+        padding: 0;
+
+        .left {
+     
+          padding: 30px;
+          text-align: center;
+
+          p {
+            font-size: 14px;
+            line-height: 1.4;
+          }
+
+          div[style*="display: flex"] {
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+
+            div[style*="width: 1px"] {
+              display: none;
+            }
+          }
+        }
+
+        form {
+          width: 100%;
+          padding: 30px;
+
+          .ins {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+
+          label {
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+
+          input, textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+          }
+
+          button {
+            width: 100%;
+            height: 45px;
+            font-size: 16px;
+            margin-top: 10px;
+          }
+        }
+      }
     }
   }
 }

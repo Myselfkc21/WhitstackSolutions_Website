@@ -1,28 +1,50 @@
 .container {
   margin: 0 100px;
-
   margin-top: 0px;
   display: flex;
   flex-direction: row;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .Intro {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  opacity: 0;
+  animation: slideInLeft 1s ease-out 0.3s forwards;
 }
 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-/* Lava lamp-like blobs */
-/* Lava lamp-like blobs with complementary colors */
+/* Lava lamp-like blobs with enhanced animations */
 .blob {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
   mix-blend-mode: multiply;
-  animation: moveBlobs 15s infinite ease-in-out;
-  filter: blur(5px);
+  filter: blur(8px);
+  transition: all 0.5s ease;
 }
 
 .blob1 {
@@ -31,7 +53,7 @@
   top: 0px;
   left: -50px;
   background: #F9A76A;
-  /* background: radial-gradient(circle, rgba(164, 232, 224, 0.6), rgba(130, 200, 190, 0.8)); Soft Cyan */
+  animation: floatBlob1 8s infinite ease-in-out;
 }
 
 .blob2 {
@@ -40,7 +62,7 @@
   top: 50px;
   right: -80px;
   background: #F4A261;
-  /* background: radial-gradient(circle, rgba(195, 164, 232, 0.6), rgba(150, 130, 210, 0.8)); Pastel Purple */
+  animation: floatBlob2 10s infinite ease-in-out;
 }
 
 .blob3 {
@@ -50,41 +72,37 @@
   left: 50%;
   transform: translateX(-50%);
   background: #F8CBAE;
-  /* background: radial-gradient(circle, rgba(248, 164, 168, 0.6), rgba(240, 130, 134, 0.8)); Light Coral */
+  animation: floatBlob3 12s infinite ease-in-out;
 }
 
-/* Add another blob for balance */
 .blob4 {
   width: 200px;
   height: 200px;
   top: 300px;
   left: 20px;
   background: #F9A76A;
-  /* background: radial-gradient(circle, rgba(248, 232, 164, 0.6), rgba(240, 210, 130, 0.8)); Warm Yellow */
+  animation: floatBlob4 9s infinite ease-in-out;
 }
 
-/* Animation for blob movement */
-@keyframes moveBlobs {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-30px) scale(1.05);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
+@keyframes floatBlob1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -30px) scale(1.1); }
 }
 
-.container {
-  margin: 0 100px;
-  margin-top: 0px;
-  display: flex;
-  flex-direction: row;
-  position: relative; /* Required to position the spheres properly */
-  z-index: 1; /* Ensures that content stays on top */
+@keyframes floatBlob2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-20px, 30px) scale(1.15); }
 }
 
+@keyframes floatBlob3 {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translate(-45%, -20px) scale(1.05); }
+}
+
+@keyframes floatBlob4 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(15px, 20px) scale(1.1); }
+}
 
 .welcomePart {
   margin-top: 50px;
@@ -99,16 +117,39 @@ h1 {
   font-size: 40px;
   line-height: 1.3;
   text-wrap: nowrap;
+  animation: textReveal 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 p {
   font-size: 18px;
   color: #191825;
-  opacity: 0.7;
+  opacity: 0;
   font-family: "Inter", sans-serif;
   text-align: justify;
   white-space: wrap;
   line-height: 1.5;
+  animation: fadeInText 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
 }
 
 .Images {
@@ -119,26 +160,23 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: slideInRight 1s ease-out 0.6s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #img1 {
   display: none;
-  /* hidden on all screen sizes */
-}
-
-@keyframes theaterScreenEffect {
-  0% {
-    transform: perspective(1000px) rotateY(0deg);
-    opacity: 1;
-  }
-  50% {
-    transform: perspective(1000px) rotateY(90deg);
-    opacity: 0;
-  }
-  100% {
-    transform: perspective(1000px) rotateY(180deg);
-    opacity: 1;
-  }
 }
 
 #img2 {
@@ -146,25 +184,14 @@ p {
   width: 600px;
   height: 400px;
   border-radius: 30px;
-  transition: 0.5s ease-in-out;
-  animation: theaterScreenEffect 5s ease-in-out infinite; /* Add the theater screen effect */
-  transform-origin: center;
-  animation: none;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
-
-/* Container for Hero Section */
-.container {
-  position: relative;
-  margin: 0 100px;
-  display: flex;
-  flex-direction: row;
-  z-index: 1;
-}
-
 
 #img2:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
 }
 
 /* Media Queries for responsiveness */
@@ -271,7 +298,7 @@ p {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1270px) {
   .container {
     flex-direction: column;
     align-items: center;
@@ -319,18 +346,27 @@ p {
     height: auto;
     margin: 0;
     scale: 0.7;
-    animation: none;
-    
   }
+  
   .blob2{
     top: 200px;
   }
 }
+
 @media (max-width:768px) {
   .blob{
     display: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .blob2{
+    /* display: none;
+     */
+    right: 100px;
+  }
+}
+
 @media (max-width: 950px) {
   .container {
     flex-direction: column;
@@ -367,7 +403,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
   }
@@ -380,14 +416,13 @@ p {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 883px) {
   .Images{
     height: auto;
     margin: 0;
   }
   #img2 {
     scale: 0.9;
-    animation: none;
   }
 }
 
@@ -411,12 +446,10 @@ p {
   .Images{
     height: auto;
     margin: 0;
-
   }
 
   #img2 {
     scale: 0.8;
-    animation: none;
   }
 }
 

@@ -1,25 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import NavBar from '../Home/Components/NavBar/NavBar';
-import { Helmet } from 'react-helmet';
-import './WebDevPage.css';
-import HeadPart from './Components/HeadPart/HeadPart';
-import TextPart from './Components/TextPart/TextPart';
-import FooterSection from './Components/Footers/FooterSection';
+import NavBar from "../Home/Components/NavBar/NavBar";
+import { Helmet } from "react-helmet";
+import "./WebDevPage.css";
+
+import TextPart from "./Components/TextPart/TextPart";
+import FooterSection from "./Components/Footers/FooterSection";
 
 const WebDevPage = () => {
-
   return (
     <>
       <Helmet>
-        <title>Services Provided</title>
-        <meta name="description" content="Services Provided" />
-        <link rel="canonical" href="/service1" />
+        <title>Our Services | Whitstack Solutions</title>
+        <meta
+          name="description"
+          content="Explore the diverse services offered by Whitstack Solutions, including cloud computing, web development, AI/ML solutions, IT staffing, and hardware reselling. Your one-stop destination for tech innovation."
+        />
+        <link rel="canonical" href="/Web-service-provider" />
       </Helmet>
       <div>
-          <NavBar />
-        <div className={`Head`}>
-          <HeadPart />
-        </div>
+        <NavBar />
+        <div className={`Head`}></div>
         <TextPart />
         <FooterSection />
       </div>

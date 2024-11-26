@@ -110,7 +110,7 @@ img {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 973px) {
   .NavContainer {
     margin: 0 20px;
     gap: 30px;

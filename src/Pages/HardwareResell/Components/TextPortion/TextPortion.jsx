@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./Textstyle.css";
 const TextPortion = () => {
   return (
-    <div className="TextPartCont" style={{ marginTop: "50px" }}>
+    <div className="HardwareResellTextContainer" style={{ marginTop: "50px" }}>
       <h1>IT Hardware Reselling Services</h1>
-      <div className="text">
+      <div className="hardwareResellContent">
         <p>
           At Whitestack Solutions, we are your trusted partner for top-quality
           IT hardware reselling. With our wide range of hardware products, we

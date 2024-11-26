@@ -2,15 +2,20 @@ import React from "react";
 import "./IntroPart.css";
 const IntroPart = () => {
   return (
-    <div className="IntroPart">
+    <div className="IntroPart" style={{ paddingTop: "0" }}>
       <div className="IntroText">
         <h1>
           Hola! <br /> We are Whitstack
         </h1>
         <p>
-          {" "}
-          We are a team of professional IT consultants and software development
-          experts. We are ready to help you with your IT needs.{" "}
+          We are Cloud services company dedicated to run business through
+          secure, scalable and innovative cloud solutions. We have expertise in
+          Cloud deployments, infrastructure, AI/ML and IT staffing. we partner
+          with organizations to streamline operations, enhance agility, and
+          drive digital transformation. Our team of skilled professionals brings
+          together deep technical knowledge and a customer-centric approach to
+          deliver reliable, custom-fit solutions that adapt as our clients’
+          needs evolve.
         </p>
       </div>
 

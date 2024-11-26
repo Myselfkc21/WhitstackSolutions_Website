@@ -14,7 +14,9 @@ const ServicesSection = () => {
               applications that can easily be integrated and be optimized across
               all platforms.
             </p>
-            <button onClick={() => (window.location.href = "/service1")}>
+            <button
+              onClick={() => (window.location.href = "/Web-service-provider")}
+            >
               Learn more
             </button>
           </div>
@@ -36,7 +38,11 @@ const ServicesSection = () => {
               Whitstack cloud consulting services can help you find the right
               cloud design that fits your needs for innovation and growth.
             </p>
-            <button onClick={() => (window.location.href = "/service2")}>
+            <button
+              onClick={() =>
+                (window.location.href = "/cloud-computing-services")
+              }
+            >
               Learn more
             </button>
           </div>
@@ -60,7 +66,7 @@ const ServicesSection = () => {
               applications that can easily be integrated and be optimized across
               all platforms.
             </p>
-            <button onClick={() => (window.location.href = "/service3")}>
+            <button onClick={() => (window.location.href = "/ai-ml-services")}>
               Learn more
             </button>
           </div>
@@ -82,7 +88,9 @@ const ServicesSection = () => {
               Technical recruiting is key to business success and companies need
               a partner who understands the skills to build a strong workforce.
             </p>
-            <button onClick={() => (window.location.href = "/service4")}>
+            <button
+              onClick={() => (window.location.href = "/it-staffing-services")}
+            >
               Learn more
             </button>
           </div>
@@ -99,13 +107,42 @@ const ServicesSection = () => {
         </div>
         <div className="service">
           <div className="left">
+            <h3>Digital Marketing Services</h3>
+            <p>
+              Effective digital marketing is vital, and businesses need a
+              partner who delivers tailored strategies and measurable results to
+              meet their growth goals.
+            </p>
+            <button
+              onClick={() =>
+                (window.location.href = "/digital-marketing-services")
+              }
+            >
+              Learn more
+            </button>
+          </div>
+          <div className="right">
+            <img
+              title="IT Hardware reselling Services"
+              width="auto"
+              height="auto"
+              loading="lazy"
+              src="https://img.freepik.com/free-photo/medium-shot-men-holding-smartphone_23-2150208243.jpg?t=st=1732102204~exp=1732105804~hmac=0251c13cf37e371ad3132ead032ad4809e2c493e4e67c58db741792452cd8766&w=2000"
+              alt="AI/ML Services"
+            />
+          </div>
+        </div>
+        <div className="service">
+          <div className="left">
             <h3>IT Hardware Reselling Services</h3>
             <p>
               Quality IT hardware reselling is essential, and businesses need a
               partner who delivers reliable products and expert support to meet
               their technology needs.
             </p>
-            <button onClick={() => (window.location.href = "/service5")}>
+            <button
+              onClick={() => (window.location.href = "/it-hardware-reselling")}
+            >
               Learn more
             </button>
           </div>

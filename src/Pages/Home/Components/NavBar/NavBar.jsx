@@ -29,23 +29,26 @@ const NavBar = () => {
         {/* Dropdown Container */}
         <div
           className="dropdown-container"
-          onClick={handleDropdownClick} // Handle clicks for touch devices
+          onClick={handleDropdownClick}
           style={{ cursor: "pointer" }}
         >
-          <p>Our Services</p>
+          <a style={{ color: "black", cursor: "pointer", animation: "none" }}>
+            Our Services
+          </a>
 
           {/* Dropdown Menu */}
           <div className={`dropdown-menu ${dropdown ? "active" : ""}`}>
-            <a href="/service1">Web Development</a>
-            <a href="/service2">Cloud Consulting Services</a>
-            <a href="/service3">AI/ML Services</a>
-            <a href="/service4">IT Staffing Services</a>
-            <a href="/service5">IT Hardware Resell</a>
+            <a href="/Web-service-provider">Web Development</a>
+            <a href="/cloud-computing-services">Cloud Consulting Services</a>
+            <a href="/ai-ml-services">AI/ML Services</a>
+            <a href="/it-staffing-services">IT Staffing Services</a>
+            <a href="/it-hardware-reselling">IT Hardware Resell</a>
+            <a href="/digital-marketing-services">Digital Marketing Services</a>
           </div>
         </div>
 
-        <a href="/contactus">Contact</a>
-        <a href="/aboutus">About Us</a>
+        <a href="/contact-us">Contact</a>
+        <a href="/about-us">About Us</a>
       </div>
 
       <div className="Buttons">
