@@ -9,7 +9,7 @@ const ContactForm = () => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-    formData.append("access_key", "0f74f878-f0e9-494a-a097-74a12165c437");
+    formData.append("access_key", "c86f6e25-d983-4209-b36f-4b02f90e47b3");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -58,25 +58,13 @@ const ContactForm = () => {
                 Hyderabad, Telangana, 500032 <br />
                 India.
               </p>
+
+              <p>7330639555</p>
               <hr />
               <p>
                 Whitstack Solutions Inc <br /> Downingtown, PA USA- 19335
-              </p>
-
-              <p style={{ marginTop: "20px" }} className="phone">
-                <b>phone:</b>
-              </p>
-              <div style={{ display: "flex", gap: "10px" }}>
-                <p>7330639555</p>
-                <div
-                  style={{
-                    width: "1px",
-                    height: "20px",
-                    backgroundColor: "#000",
-                  }}
-                ></div>
                 <p>+1 9173340128</p>
-              </div>
+              </p>
 
               <p>
                 <b>Email:</b>

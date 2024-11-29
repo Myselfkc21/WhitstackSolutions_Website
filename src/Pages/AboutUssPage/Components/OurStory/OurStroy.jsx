@@ -13,21 +13,10 @@ const OurStory = () => {
       <div className="ourStoryText">
         <h1>Our Story</h1>
         <p>
-          Welcome to Whitestack Solutions. Our journey began with a vision to
-          empower businesses through cutting-edge IT services and hardware. With
-          a dedicated team, we’ve been able to provide innovative solutions
-          tailored to our clients' unique needs. Welcome to Whitestack
-          Solutions. Our journey began with a vision to empower businesses
-          through cutting-edge IT services and hardware. With a dedicated team,
-          we’ve been able to provide innovative solutions tailored to our
-          clients' unique needs. Welcome to Whitestack Solutions. Our journey
-          began with a vision to empower businesses through cutting-edge IT
-          services and hardware. With a dedicated team, we’ve been able to
-          provide innovative solutions tailored to our clients' unique needs.
-          Welcome to Whitestack Solutions. Our journey began with a vision to
-          empower businesses through cutting-edge IT services and hardware. With
-          a dedicated team, we’ve been able to provide innovative solutions
-          tailored to our clients' unique needs.
+          Our Story we started with a simple belief that technology should
+          enable growth, not create barriers. With this vision, we began our
+          journey, helping organizations transform their operations through
+          smart, scalable, and secure IT solutions.
         </p>
       </div>
     </div>

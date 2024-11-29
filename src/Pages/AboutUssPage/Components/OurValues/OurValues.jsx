@@ -1,6 +1,9 @@
 import React from "react";
 import "./OurValues.css";
 import { BsTransparency } from "react-icons/bs";
+import { IoPersonSharp } from "react-icons/io5";
+import { RiTeamFill } from "react-icons/ri";
+import { FaMagic } from "react-icons/fa";
 const OurValues = () => {
   return (
     <div className="OurValues">
@@ -17,16 +20,28 @@ const OurValues = () => {
         <div className="Point">
           <div className="PointHead">
             <div className="icon">
-              <BsTransparency></BsTransparency>
+              <FaMagic />
             </div>
-            <h3>Default to Transparency</h3>
+            <h3>Innovation</h3>
           </div>
           <div className="PointBody">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              tenetur fugiat rem error maxime quaerat sint aspernatur,
-              necessitatibus quasi, ab dicta accusamus tempore? Eos eligendi rem
-              ullam ratione, esse magni?
+              Technology evolves rapidly, and we strive to stay ahead of the
+              curve to help our clients adapt and thrive.
+            </p>
+          </div>
+        </div>
+        <div className="Point">
+          <div className="PointHead">
+            <div className="icon">
+              <IoPersonSharp />
+            </div>
+            <h3>Client</h3>
+          </div>
+          <div className="PointBody">
+            <p>
+              We listen, collaborate, and customize solutions to ensure their
+              success, building lasting partnerships based on trust and value.
             </p>
           </div>
         </div>
@@ -35,30 +50,27 @@ const OurValues = () => {
             <div className="icon">
               <BsTransparency></BsTransparency>
             </div>
-            <h3>Default to Transparency</h3>
+            <h3>Integrity and Transparency</h3>
           </div>
           <div className="PointBody">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              tenetur fugiat rem error maxime quaerat sint aspernatur,
-              necessitatibus quasi, ab dicta accusamus tempore? Eos eligendi rem
-              ullam ratione, esse magni?
+              We believe in doing the right thing, always. Honesty,
+              accountability, and open communication are the foundations of our
+              relationships with clients, partners, and colleagues.
             </p>
           </div>
         </div>
         <div className="Point">
           <div className="PointHead">
             <div className="icon">
-              <BsTransparency></BsTransparency>
+              <RiTeamFill />
             </div>
-            <h3>Default to Transparency</h3>
+            <h3>Collaboration and Teamwork</h3>
           </div>
           <div className="PointBody">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              tenetur fugiat rem error maxime quaerat sint aspernatur,
-              necessitatibus quasi, ab dicta accusamus tempore? Eos eligendi rem
-              ullam ratione, esse magni?
+              We value the strength of diverse perspectives and skills. By
+              working together—internally and with our clients—we achieve more.
             </p>
           </div>
         </div>
