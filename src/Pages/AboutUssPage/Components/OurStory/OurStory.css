@@ -19,6 +19,7 @@
     align-items: center;
 }
 
+
 .OurStoryImages img {
     width: 100%;
     height: auto;
@@ -36,9 +37,11 @@
     display: flex;
     flex-direction: column;
     gap: clamp(20px, 4vw, 40px);
+    
 }
 
 .ourStoryText h1 {
+
     font-size: clamp(36px, 5vw, 60px);
     font-weight: 700;
     line-height: 1.2;
@@ -50,6 +53,7 @@
 
 .ourStoryText p {
     font-size: clamp(16px, 2vw, 20px);
+
     line-height: 1.6;
     color: #666;
 }

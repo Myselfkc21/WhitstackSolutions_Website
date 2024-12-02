@@ -4,10 +4,12 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+  
     max-width: 1200px;
     padding: 40px 60px;
     transition: all 0.3s ease;
     animation: containerFadeIn 1s ease-out;
+
 }
 
 @keyframes containerFadeIn {
@@ -30,7 +32,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.4s ease;
-
+    color: #333; /* Changed color to a darker shade for better contrast */
 }
 
 @keyframes titleSlideIn {
@@ -49,16 +51,21 @@
     background: linear-gradient(45deg, #1976D2, #0097A7);
     -webkit-background-clip: text;
     background-clip: text;
+    color: #333; /* Changed color to a darker shade for better contrast */
 }
 
 .TextPortionContainer .text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap:20px;
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 40px;
-    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    color: #555; /* Changed color to a darker shade for better contrast */
+    font-family: 'Inter', sans-serif; /* Added font family for consistency */
     text-align: left;
     animation: textFadeIn 1s ease-in;
 }
@@ -100,7 +107,7 @@
 .TextPortionContainer .text h4 {
     margin: 25px 0 15px 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #333; /* Changed color to a darker shade for better contrast */
     position: relative;
     padding-bottom: 10px;
     animation: slideInRight 0.8s ease-out;
@@ -133,6 +140,17 @@
     to {
         width: 50px;
     }
+}
+
+.TextPortionContainer .cloud-icon {
+    font-size: 3rem;
+    color: #2196F3;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.TextPortionContainer .cloud-icon:hover {
+    transform: translateY(-5px);
 }
 
 @media (max-width: 1024px) {

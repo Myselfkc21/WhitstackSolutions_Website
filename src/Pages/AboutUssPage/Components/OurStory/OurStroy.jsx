@@ -11,7 +11,7 @@ const OurStory = () => {
         />
       </div>
       <div className="ourStoryText">
-        <h1>Our Story</h1>
+        <h1>The Beginning</h1>
         <p>
           Our Story we started with a simple belief that technology should
           enable growth, not create barriers. With this vision, we began our

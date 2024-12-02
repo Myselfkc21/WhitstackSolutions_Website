@@ -1,6 +1,5 @@
 import React from "react";
 import "./ContactForm.css";
-import Head from "../Head/Head"; // If you have a Head component
 
 const ContactForm = () => {
   const [result, setResult] = React.useState("");
@@ -9,7 +8,7 @@ const ContactForm = () => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-    formData.append("access_key", "c86f6e25-d983-4209-b36f-4b02f90e47b3");
+    formData.append("access_key", "0f9d770e-b20d-4e80-a6d9-efaaad812b37");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -45,7 +44,7 @@ const ContactForm = () => {
                 id="heads"
                 style={{
                   color: "black",
-                  padding: "10px 0px",
+                  padding: "0px 0px",
                   fontWeight: "700",
                   paddingBottom: "0",
                 }}
@@ -59,17 +58,53 @@ const ContactForm = () => {
                 India.
               </p>
 
-              <p>7330639555</p>
+              <p
+                style={{
+                  color: "black",
+                  cursor: "pointer",
+                  paddingBottom: "0",
+                }}
+                onClick={() => window.open("https://wa.me/7330639555")}
+              >
+                +91 7330639555
+              </p>
               <hr />
               <p>
                 Whitstack Solutions Inc <br /> Downingtown, PA USA- 19335
-                <p>+1 9173340128</p>
+                <p
+                  style={{
+                    color: "black",
+                    cursor: "pointer",
+                    paddingTop: "15px",
+                    paddingBottom: "10px",
+                    fontWeight: "400",
+                  }}
+                  onClick={() => window.open("https://wa.me/9173340128")}
+                >
+                  +1 9173340128
+                </p>
               </p>
 
               <p>
                 <b>Email:</b>
               </p>
-              <p>info@whistack.com</p>
+              <a
+                // href="https://outlook.office.com/mail/inbox/id/AAQkAGMwMjA4Zjg4LTg4MzQtNDRhYy04ZjQyLTc3NDUyYzAzZjc3YgAQAFeM%2FU3HhUdHs5etJj6YHL8%3D"
+                style={{
+                  cursor: "pointer",
+                  color: "black",
+                  fontSize: "20px",
+                  fontWeight: "700",
+                }}
+                onClick={() => {
+                  navigator.clipboard.writeText("info@whistack.com");
+                  window.open(
+                    "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpDzBlsgxBdQjNvjNKMHqQrSmMTLmqBgvmsjQNlQkPVNCHGZFdXRMdHqdQQdSZlpJGplSL"
+                  );
+                }}
+              >
+                info@whitstack.com
+              </a>
             </div>
           </div>
           <form onSubmit={onSubmit}>
