@@ -64,7 +64,7 @@ const PatnersAndClients = () => {
             height="auto"
             loading="lazy"
             title="crayon"
-            src="public/AWS Logo.png"
+            src="/AWS Logo.png"
             alt="aws logo"
           />
         </a>

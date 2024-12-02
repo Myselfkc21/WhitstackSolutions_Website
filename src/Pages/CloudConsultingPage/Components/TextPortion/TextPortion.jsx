@@ -11,10 +11,9 @@ const TextPortion = () => {
       </p>
       <div className="text">
         <div>
-          <h2>Cloud consulting Service</h2>
+          <h2>Cloud Consulting Service</h2>
           <p>
-            {" "}
-            legacy IT environments can be complex. Whitstack’s Cloud Consulting
+            Legacy IT environments can be complex. Whitstack’s Cloud Consulting
             Services are designed to help you navigate these challenges, finding
             the perfect hybrid cloud solution that fosters innovation and
             growth. Cloud computing has become the go-to solution for overcoming
@@ -22,8 +21,7 @@ const TextPortion = () => {
             complexities. The vast array of cloud solutions available can create
             uncertainty about which options truly align with your business
             needs. Whitstack’s expert team provides comprehensive cloud adoption
-            consulting and implementation services for hyper scalers like amazon
-            web server,Microsoft azure and Google cloud.
+            consulting and implementation services for hyper scalers like Amazon Web Services, Microsoft Azure, and Google Cloud.
           </p>
         </div>
         <div>
